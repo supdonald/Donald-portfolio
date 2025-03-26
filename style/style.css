@@ -1,0 +1,216 @@
+
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.header{
+    background-image: url(../images/developer.png) , url(../images/header_bg.png);
+    /* background-size: ; */
+    /* max-width: 60px; */
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+/* nav style */
+nav{
+    display: flex;
+    /* vertical wise center */
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px 0 130px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 43px;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+nav .dark-nav{
+    color: rgb(71, 71, 71)
+}
+/* banner style */
+.btn{
+    /* Rectangle 1 */
+    /* position: absolute; */
+    width: 150px;
+    height: 64px;
+    /* left: 1220px;
+    right: -1220px;
+    top: 50px;
+    bottom: -50px; */
+    border-radius: 5px;
+    background: rgb(253, 110, 10);
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color:  rgb(255, 255, 255);
+    
+}
+.btn-1{
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border-color:rgb(253, 110, 10) ;
+    /* border: none; */
+    color: rgb(253, 110, 10);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 130px;
+
+}
+.banner-content{
+    max-width: 580px;
+    margin-top: 100px;
+    
+}
+.banner-profilepic{
+    width: 584px;
+}
+.bg-color{
+    background-color: rgb(255, 244, 237);;
+}
+main{
+    max-width:1130px;
+    margin: 0 auto;
+
+}
+.about{
+    text-align: center;
+    border-radius: 10px;
+    padding: 131px 156px;
+    margin-top: 130px;
+}
+.about-me{
+    color: rgb(24, 24, 24);
+    font-size: 35px;
+    font-weight: 700;
+
+}
+.about-description{
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.about-items{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.about-title{
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    font-weight: 400;
+}
+.about-info{
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    font-weight: 700;
+}
+.wid{
+    text-align: center;
+}
+/* card style */
+.card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-item{
+    max-width: 267px;
+    max-height: 377px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-info{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+.resume-title{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: 120px;
+
+}
+.resume{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 70px;
+
+}
+.experience-title{
+    color: rgb(71, 71, 71);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.experience-sub-title{
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+.experience-description{
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.footer{
+    display: flex;
+    gap: 100px;
+    background-color: rgb(255, 248, 243);;
+    margin-top: 120px;
+    padding: 130px 230px;
+}
+.contact-details{
+    max-width: 50%;
+}
+.icons{
+    margin: 20px;
+
+}
+
+.contact-form input[type="text"], input[type="email"], textarea {
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 24px;
+    border: none;
+    display: block;
+}
