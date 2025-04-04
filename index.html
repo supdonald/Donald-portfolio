@@ -9,15 +9,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="../Donald portfolio/style/style.css">
 </head>
-<body class="open-sans-normal">
+<body class="open-sans-normal body-all">
     <header class="header bg-color">
-        <nav>
-            <h3 class="nav-title">Don<span style="color: rgb(253, 110, 10);">ald</span></h3>
-            <ul>
-                <li><a class="dark-nav" href="">Portfolio</a></li>
-                <li><a class="dark-nav" href="">Blog</a></li>
-                <li><a class="dark-nav" href=""><button class="btn">Hire Me</button></a></li>
-            </ul>
+        <nav class="nav">
+            <div>
+                <h3 class="nav-title">Don<span style="color: rgb(253, 110, 10);">ald</span></h3>
+            </div>
+            <div class="nav-btn">
+                <ul>
+                    <li><a class="dark-nav" href="">Portfolio</a></li>
+                    <li><a class="dark-nav" href="">Blog</a></li>
+                    <li><a class="dark-nav" href=""><button class="btn">Hire Me</button></a></li>
+                </ul>
+                
+            </div>
+
         </nav>
         
         <div class="banner">
@@ -25,65 +31,78 @@
                 <h4>Hi, I  am</h4>
                 <h1>Donald Shaibal Biswas</h1>
                 <p class="banner-description">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
-                <button class="btn">Download CV</button>
-                <button class="btn-1">Contact</button>
+                <div class="banner-button">
+                    <button class="btn">Download CV</button>
+                    <button class="btn-1">Contact</button>
+                </div>
+               
             </div>
             <img class="banner-profilepic" src="../Donald portfolio/images/donald-bg-removed.png" alt="" srcset="">
         </div>
     </header>
-   <main>
+   <main class="main-part">
         <section class="about bg-color">
-            <h3 class="about-me">About Me</h3>
-            <p class="about-description">I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.</p>
-            <div class="about-items">
-                <div class="about-item">
-                    <p class="about-title">Name</p>
-                    <p class="about-info">Donald Shaibal Biswas</p>
+            <div class="about-all">
+                <div class="about-content">
+                    <h3 class="about-me">About Me</h3>
+                    <p class="about-description">I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.</p>
                 </div>
-                <div class="about-item">
-                    <p class="about-title">Email</p>
-                    <p class="about-info">donaldshaibal@gmail.com</p>
-                </div>
-                <div class="about-item">
-                    <p class="about-title">Date of Birth</p>
-                    <p class="about-info">22 June, 1999</p>
-                </div>
-                <div class="about-item">
-                    <p class="about-title">From</p>
-                    <p class="about-info">Dhaka, Bangladesh</p>
+                <div class="about-items">
+                    <div class="about-item1">
+                        <p class="about-title">Name</p>
+                        <p class="about-info">Donald Shaibal Biswas</p>
+                    </div>
+                    <div class="about-item1">
+                        <p class="about-title">Email</p>
+                        <p class="about-info">donaldshaibal@gmail.com</p>
+                    </div>
+                    <div class="about-item1">
+                        <p class="about-title">Date of Birth</p>
+                        <p class="about-info">22 June, 1999</p>
+                    </div>
+                    <div class="about-item1">
+                        <p class="about-title">From</p>
+                        <p class="about-info">Dhaka, Bangladesh</p>
+                    </div>
                 </div>
             </div>
+           
         </section>
         <section class="wid">
             <h3 class="about-me">What I do</h3>
             <p class="about-description">I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
         </section>
-        <section class="card">
-            <div class="card-item">
-                <img src="../Donald portfolio/images/icons/js.png" alt="" srcset="">
-                <h4 class="card-title">Vanilla JavaScript</h4>
-                <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="card-item">
-                <img src="../Donald portfolio/images/icons/react.png" alt="" srcset="">
-                <h4 class="card-title">React</h4>
-                <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="card-item">
-                <img src="../Donald portfolio/images/icons/nodejs.png" alt="" srcset="">
-                <h4 class="card-title">Node.js</h4>
-                <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="card-item">
-                <img src="../Donald portfolio/images/icons/mongo.png" alt="" srcset="">
-                <h4 class="card-title">MongoDB</h4>
-                <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-            </div>
-        </section>
         <section>
-            <h1 class="resume-title">A summary of My Resume</h1>
+            <div class="card">
+                <div class="card-item">
+                    <img src="../Donald portfolio/images/icons/js.png" alt="" srcset="">
+                    <h4 class="card-title">Vanilla JavaScript</h4>
+                    <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card-item">
+                    <img src="../Donald portfolio/images/icons/react.png" alt="" srcset="">
+                    <h4 class="card-title">React</h4>
+                    <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card-item">
+                    <img src="../Donald portfolio/images/icons/nodejs.png" alt="" srcset="">
+                    <h4 class="card-title">Node.js</h4>
+                    <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card-item">
+                    <img src="../Donald portfolio/images/icons/mongo.png" alt="" srcset="">
+                    <h4 class="card-title">MongoDB</h4>
+                    <p class="card-info">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+            </div>
+         
+        </section>
+        <section class="resume-main">
+            <div class="resume-title">
+                <h3>A summary of My Resume</h1>
+            </div>
             <div class="resume">
-            <div class="resume-column">
+            <div class="resume-column1">
                 <h2 class="resume-col-title">My Education</h2>
                 <div class="experience">
                     <h4 class="experience-title">Master in Computer Engineering</h4>
@@ -104,21 +123,21 @@
                     <div class="experience-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</div>
                 </div>
             </div>
-            <div class="resume-colum">
+            <div class="resume-colum2">
                 <h2 class="resume-col-title">My Experience</h2>
                 <div class="experience">
                     <h4 class="experience-title">Sr. Font End Developer</h4>
                     <h5 class="experience-sub-title">Apple Inc / 2020 - Current</h5>
                     <div class="experience-description">List skill/technologies here. You can change the icon above 
                         to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</div>
-                </div>
+                </div><br>
                 <hr>
                 <div class="experience">
                     <h4 class="experience-title">HTML Developer</h4>
                     <h5 class="experience-sub-title">Adobe Inc / 2017 - 2018</h5>
                     <div class="experience-description">List skill/technologies here. You can change the icon above 
                         to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</div>
-                </div>
+                </div><br>
                 <hr>
                 <div class="experience">
                     <h4 class="experience-title">HTML Developer</h4>
@@ -133,9 +152,10 @@
         </section>
    </main>
    <footer class="footer">
+    <div class="footer-content">
         <div class="contact-details">
-            <h3>Lets Connect</h3>
-            <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+            <h3>Lets Connect</h3><br><br>
+            <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p><br><br>
             <div class="icons">
                 <img src="../Donald portfolio/images/icons/facebook.png" alt="" srcset="">
                 <img src="../Donald portfolio/images/icons/twitter.png" alt="" srcset="">
@@ -145,12 +165,14 @@
         <div class="footer-send-msge">
             <h3>Let’s Message me</h3>
             <div class="contact-form">
-                <input type="text" placeholder="Your Name"><br><br>
-                <input type="text" placeholder="Your Email"><br><br>
-                <textarea name="Message" id="" cols="50" rows="20" placeholder="Message"></textarea>
+                <input type="text" placeholder="Your Name" required><br><br>
+                <input type="text" placeholder="Your Email" required><br><br>
+                <textarea name="Message" id="" cols="50" rows="20" placeholder="Message" required></textarea>
                 <input class="btn" type="submit" value="Submit">
             </div>
         </div>
+    </div>
+   
    </footer>
     
 </body>

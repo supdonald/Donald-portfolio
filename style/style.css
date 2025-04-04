@@ -6,14 +6,24 @@
     font-variation-settings:
       "wdth" 100;
   }
-
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header{
-    background-image: url(../images/developer.png) , url(../images/header_bg.png);
+    background-image: url(../images/developer.png);
     /* background-size: ; */
     /* max-width: 60px; */
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: top left;
+    height: 100%;
+    /* width: fit-content; */
+
+    /* padding: 20px; */
+    /* border: 2px dotted blue; */
   }
+  
 
 /* nav style */
 nav{
@@ -22,6 +32,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 0 30px 0 130px;
+
+}
+.nav-btn{
+    display: flex;
+    flex-direction: row;
 }
 nav ul{
     display: flex;
@@ -60,12 +75,16 @@ nav .dark-nav{
     color:  rgb(255, 255, 255);
     
 }
+.banner-button{
+    display: flex;
+    justify-content: space-evenly;
+}
 .btn-1{
-    position: absolute;
+    /* position: absolute; */
     width: 160px;
     height: 64px;
     border-radius: 5px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     border-color:rgb(253, 110, 10) ;
     /* border: none; */
     color: rgb(253, 110, 10);
@@ -75,6 +94,7 @@ nav .dark-nav{
     letter-spacing: 0%;
     text-align: center;
 }
+
 .banner{
     display: flex;
     align-items: center;
@@ -85,24 +105,40 @@ nav .dark-nav{
 .banner-content{
     max-width: 580px;
     margin-top: 100px;
-    
+
 }
 .banner-profilepic{
-    width: 584px;
+    width: 70%;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
 }
 .bg-color{
-    background-color: rgb(255, 244, 237);;
+    background-color: rgb(255, 244, 237);
+
 }
 main{
-    max-width:1130px;
+    max-width:100%;
     margin: 0 auto;
+    /* border: 2px dotted blue; */
+
 
 }
 .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    /* height: 600px; */
     border-radius: 10px;
-    padding: 131px 156px;
+    /* padding: 131px 156px; */
     margin-top: 130px;
+
+}
+.about-all{
+    margin: 100px;
+
 }
 .about-me{
     color: rgb(24, 24, 24);
@@ -117,11 +153,14 @@ main{
 
 }
 .about-items{
+    width: 100%;
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: space-around;
+    margin-top: 70px;
+
 }
+
 .about-title{
     font-size: 15px;
     color: rgb(117, 117, 117);
@@ -134,12 +173,15 @@ main{
 }
 .wid{
     text-align: center;
+
 }
 /* card style */
 .card{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    /* border: 2px dotted red; */
+
 }
 .card-item{
     max-width: 267px;
@@ -148,6 +190,7 @@ main{
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
     text-align: center;
     padding: 30px 30px 30px 30px;
+
 }
 .card-title{
     font-size: 20px;
@@ -162,15 +205,26 @@ main{
     font-weight: 700;
     font-size: 35px;
     text-align: center;
-    margin: 120px;
+    /* margin: 120px; */
+    margin-top: 120px;
+    margin-bottom: 120px;
+
 
 }
 .resume{
     display: flex;
     gap: 40px;
     margin-bottom: 70px;
+    padding: 10px;
 
 }
+
+.resume-colum2{
+    width: 150%;
+}
+
+
+
 .experience-title{
     color: rgb(71, 71, 71);
     font-size: 20px;
@@ -192,16 +246,33 @@ main{
 
 .footer{
     display: flex;
-    gap: 100px;
+
+    justify-content: center;
+    /* gap: 100px; */
     background-color: rgb(255, 248, 243);;
-    margin-top: 120px;
-    padding: 130px 230px;
+     margin-top: 50px; 
+    /* padding: 130px 230px;  */
+
 }
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+         margin-top: 120px; 
+         /* gap: 50px; */
+
+
+}
+
 .contact-details{
     max-width: 50%;
+
 }
 .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin: 20px;
+
 
 }
 
@@ -213,4 +284,125 @@ main{
     margin-bottom: 24px;
     border: none;
     display: block;
+
+}
+
+@media screen and (max-width:990px) {
+    
+    *{
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+    html, body{
+        
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        
+        
+    }
+    .body-all{
+        margin: 0 auto;
+        /* max-width: 100vw; */
+        /* background-color: palevioletred; */
+        
+    }
+    .header{
+        padding: 0;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .nav-btn>ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-content{
+        height: 400px;
+        /* display: flex; */
+        text-align:top left;
+        /* justify-content: space-between; */
+        margin: 30px 0px 30px;
+        /* border: 2px dotted blue; */
+        
+    }
+    .banner-description{
+        margin-bottom: 10px;
+    }
+    .banner-profilepic{
+        width: 100%;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+    .banner-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    .about-all{
+        max-width: 100%;
+        padding: 100px;
+        margin: 0;
+
+    }
+    .about-content{
+        max-width: 100%;
+     }
+    .about-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+   
+    .card{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+        gap: 30px;
+    }
+    .resume{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-colum2{
+        width: 100%;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+             margin-top: 120px; 
+             gap: 50px;
+             padding: 40px;
+    
+    }
+    .contact-details{
+    max-width: 100%;
+    }
+    .icons{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+
 }
